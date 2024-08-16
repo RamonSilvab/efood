@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-const cores = {
+export const cores = {
   branco: '#eee',
   vermelhoRosado: '#E66767',
   laranjaClaro: '#FFEBD9'
@@ -16,6 +16,12 @@ const GlobalCss = createGlobalStyle`
   body {
     backround-color: ${cores.branco};
     color: ${cores.vermelhoRosado};
+  }
+
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 `
