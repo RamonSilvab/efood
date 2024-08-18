@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components'
 export const cores = {
   branco: '#eee',
   vermelhoRosado: '#E66767',
-  laranjaClaro: '#FFEBD9'
+  laranjaClaro: '#FFEBD9',
+  pessegoClaro: '#FFF8F2'
 }
 
 const GlobalCss = createGlobalStyle`
@@ -12,9 +13,10 @@ const GlobalCss = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
+  }
 
   body {
-    backround-color: ${cores.branco};
+    backround-color: ${cores.pessegoClaro};
     color: ${cores.vermelhoRosado};
   }
 
@@ -23,7 +25,6 @@ const GlobalCss = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
   }
-}
 `
 
 export default GlobalCss
