@@ -15,6 +15,11 @@ export const Texto = styled.p`
   font-weight: bold;
   text-align: center;
   margin-top: 136px;
+
+  @media (max-width: 567px) {
+    margin-top: 64px;
+  }
+}
 `
 export const Container = styled.div`
   display: flex;
