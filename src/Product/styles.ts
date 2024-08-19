@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 import { cores } from '../syles'
+import { TagContainer } from '../Tag/styles'
 
 export const Card = styled.div`
   width: 472px;
   height: 398px;
+
+  ${TagContainer} {
+    margin-right: 8px;
+  }
 `
 export const TituloContainer = styled.div`
   display: flex;
