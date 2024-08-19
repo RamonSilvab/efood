@@ -9,7 +9,16 @@ const rotas = createBrowserRouter([
     element: (
       <>
         <Header />
-        <div>Teste</div>
+        <ProductsList />
+      </>
+    )
+  },
+  {
+    path: '/restaurante',
+    element: (
+      <>
+        <Header />
+        teste 1
         <ProductsList />
       </>
     )
@@ -20,8 +29,6 @@ function App() {
   return (
     <>
       <GlobalCss />
-      <Header />
-      <ProductsList />
       <RouterProvider router={rotas} />
     </>
   )

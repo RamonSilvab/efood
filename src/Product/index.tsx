@@ -1,35 +1,48 @@
 import Tag from '../Tag'
 
 import Estrela from '../assets/images/star_favorite-[#1499].png'
-import LojaImg from '../assets/images/comidaJaponesa.png'
 import {
   Card,
   TituloContainer,
   AvaliacaoContainer,
-  DescricaoContainer,
+  Descricao,
   Container,
-  Avaliacao
+  Avaliacao,
+  Infos,
+  Img
 } from './styles'
 
-export const Product = () => (
+type Props = {
+  title: string
+  infos: string[]
+  avaliacao: number
+  description: string
+  image: string
+}
+
+export const Product = ({
+  title,
+  infos,
+  avaliacao,
+  description,
+  image
+}: Props) => (
   <Card>
-    <img src={LojaImg} alt="sushi" />
-    <Tag>Destaque da semana</Tag>
-    <Tag>Japonesa</Tag>
+    <Img src={image} alt={title} />
+    <Infos>
+      {infos.map((info) => (
+        <Tag key={info}>{info}</Tag>
+      ))}
+    </Infos>
     <Container>
       <TituloContainer>
-        <h3>Hioki Sushi </h3>
+        <h3>{title}</h3>
         <AvaliacaoContainer>
-          <Avaliacao>4.9</Avaliacao>
+          <Avaliacao>{avaliacao}</Avaliacao>
           <img src={Estrela} alt="estrela" />
         </AvaliacaoContainer>
       </TituloContainer>
-      <DescricaoContainer>
-        Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis
-        frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega
-        rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão
-        sem sair do lar com nosso delivery!
-      </DescricaoContainer>
+      <Descricao>{description}</Descricao>
       <Tag type="buttom">Saiba mais</Tag>
     </Container>
   </Card>

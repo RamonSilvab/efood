@@ -16,7 +16,6 @@ const GlobalCss = createGlobalStyle`
   }
 
   body {
-    backround-color: ${cores.pessegoClaro};
     color: ${cores.vermelhoRosado};
   }
 
