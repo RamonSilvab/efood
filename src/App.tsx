@@ -1,14 +1,6 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import GlobalCss from './syles'
-import Home from './pages/Home'
-import Cardapio from './pages/Cardapio'
-
-const Rotas = () => (
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/cardapio" element={<Cardapio />} />
-  </Routes>
-)
+import Rotas from './routes'
 
 function App() {
   return (
