@@ -8,9 +8,11 @@ export const Header = () => (
   <Imagem style={{ backgroundImage: `url(${imgHeader})` }}>
     <Container>
       <div>
-        <h1>
-          <img src={logo} alt="logo do restaurant" />
-        </h1>
+        <Link to="/">
+          <h1>
+            <img src={logo} alt="logo do restaurant" />
+          </h1>
+        </Link>
       </div>
       <Texto>
         Viva experiências gastronômicas <br /> no conforto da sua casa

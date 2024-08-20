@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../syles'
+import { cores } from '../../syles'
 import { Props } from '.'
 
 export const TagContainer = styled.div<Props>`

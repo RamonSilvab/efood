@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../syles'
+import { cores } from '../../syles'
 import { TagContainer } from '../Tag/styles'
 
 export const Card = styled.div`
