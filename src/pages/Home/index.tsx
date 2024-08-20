@@ -3,6 +3,7 @@ import RestaurantsList from '../../components/RestaurantsList'
 import Restaurant from '../../models/Restaurant'
 import japonesa from '../../assets/images/comidaJaponesa.png'
 import italiana from '../../assets/images/comidaItalina.png'
+import Footer from '../../components/Footer'
 
 const restaurantes: Restaurant[] = [
   {
@@ -65,6 +66,7 @@ const Home = () => (
   <>
     <Header />
     <RestaurantsList restaurants={restaurantes} />
+    <Footer />
   </>
 )
 
