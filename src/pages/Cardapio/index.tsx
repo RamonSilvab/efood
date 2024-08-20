@@ -1,8 +1,8 @@
-import { Header } from '../../components/Header'
 import RestaurantsList from '../../components/RestaurantsList'
 import Restaurant from '../../models/Restaurant'
 import japonesa from '../../assets/images/comidaJaponesa.png'
 import italiana from '../../assets/images/comidaItalina.png'
+import HeaderCardapio from '../../components/HeaderCardapio'
 
 const restaurantes: Restaurant[] = [
   {
@@ -27,7 +27,7 @@ const restaurantes: Restaurant[] = [
 
 const Cardapio = () => (
   <>
-    <Header />
+    <HeaderCardapio />
     <RestaurantsList restaurants={restaurantes} />
   </>
 )
