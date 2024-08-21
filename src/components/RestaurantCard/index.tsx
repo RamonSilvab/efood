@@ -36,7 +36,7 @@ export const RestaurantCard = ({
         </S.AvaliacaoContainer>
       </S.TituloContainer>
       <S.Descricao>{description}</S.Descricao>
-      <Link to="/cardapio">
+      <Link to="/menu">
         <Tag type="buttom">Saiba mais</Tag>
       </Link>
     </S.Container>
