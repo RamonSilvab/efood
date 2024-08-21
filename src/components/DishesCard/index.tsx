@@ -1,12 +1,12 @@
 import { CardDishes, BtnDishe } from './styles'
 
-export type Props = {
+type Props = {
   image: string
   title: string
   description: string
 }
 
-const Dishes = ({ image, title, description }: Props) => (
+const DishesCard = ({ image, title, description }: Props) => (
   <CardDishes>
     <img src={image} alt={title} />
     <h4>{title}</h4>
@@ -15,4 +15,4 @@ const Dishes = ({ image, title, description }: Props) => (
   </CardDishes>
 )
 
-export default Dishes
+export default DishesCard

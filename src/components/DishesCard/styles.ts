@@ -19,6 +19,7 @@ export const CardDishes = styled.div`
   p {
     font-size: 14px;
     padding-bottom: 8px;
+    line-height: 22px;
   }
 `
 export const BtnDishe = styled.div`
