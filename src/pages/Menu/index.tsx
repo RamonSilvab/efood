@@ -1,3 +1,5 @@
+import { useParams } from 'react-router-dom'
+
 import HeaderMenu from '../../components/HeaderMenu'
 import Footer from '../../components/Footer'
 import Pizza from '../../assets/images/pizza.png'
@@ -49,12 +51,16 @@ const pratos: Dishes[] = [
   }
 ]
 
-const Menu = () => (
-  <>
-    <HeaderMenu />
-    <DishesList dishesapi={pratos} />
-    <Footer />
-  </>
-)
+const Menu = () => {
+  const { id } = useParams()
+
+  return (
+    <>
+      <HeaderMenu />
+      <DishesList dishesapi={pratos} />
+      <Footer />
+    </>
+  )
+}
 
 export default Menu
